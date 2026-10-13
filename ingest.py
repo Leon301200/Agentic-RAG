@@ -1,24 +1,22 @@
 from pathlib import Path
+import argparse
 import chromadb
 import hashlib
 from sentence_transformers import SentenceTransformer
+from embeddings import get_model
 
 
 SOURCE_PATH = Path(__file__).parent
 
-CHUNK_TOKENS = 350
-OVERLAP_TOKENS = 50
+CHUNK_TOKENS = 180
+OVERLAP_TOKENS = 40
 
-MODEL_NAME = "intfloat/multilingual-e5-base"
-model = SentenceTransformer(MODEL_NAME)
-tok = model.tokenizer                     
+model = get_model()
+tok = model.tokenizer
 
 STORE_PATH = SOURCE_PATH / "vectorstore"
+COLLECTION_NAME = "rag_corpus"
 client = chromadb.PersistentClient(path=str(STORE_PATH))
-collection = client.get_or_create_collection(
-    name="rag_corpus",
-    configuration={"hnsw": {"space": "cosine"}},      # cosinus explicite
-)
 
 def deterministic_id(chunk: dict) -> str:
     key = f"{chunk['source']}::{chunk['chunk_index']}::{chunk['text']}"
@@ -89,6 +87,26 @@ def embed_passages(model, texts: list[str]) -> list[list[float]]:
     return vectors
 
 def main():
+    parser = argparse.ArgumentParser(description="Indexe le corpus dans la collection Chroma.")
+    parser.add_argument(
+        "--no-reset",
+        dest="reset",
+        action="store_false",
+        help="Conserve la collection existante au lieu de la reconstruire (les chunks obsolètes restent).",
+    )
+    args = parser.parse_args()
+
+    if args.reset:
+        # Repart d'une collection vide : l'état final ne dépend que du corpus et des paramètres courants
+        try:
+            client.delete_collection(COLLECTION_NAME)
+        except chromadb.errors.NotFoundError:
+            pass                                          # première ingestion, rien à supprimer
+    collection = client.get_or_create_collection(
+        name=COLLECTION_NAME,
+        configuration={"hnsw": {"space": "cosine"}},      # cosinus explicite
+    )
+
     documents = load_documents(SOURCE_PATH / "corpus")
     all_chunks = []
     for doc in documents:
@@ -96,7 +114,7 @@ def main():
         all_chunks.extend(chunks)
     print(f"Nombre total de chunks à indexer : {len(all_chunks)}")
     embeddings = embed_passages(model, [chunk["text"] for chunk in all_chunks])
-    collection.add(
+    collection.upsert(
         ids=[deterministic_id(chunk) for chunk in all_chunks],          # list[str], identifiants UNIQUES
         documents=[chunk["text"] for chunk in all_chunks],    # list[str], le texte des chunks (pour relire et citer)
         embeddings=embeddings,                                # list[list[float]], tes vecteurs de A3

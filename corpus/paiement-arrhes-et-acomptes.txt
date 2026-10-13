@@ -1,0 +1,46 @@
+PAIEMENT, ARRHES ET ACOMPTES
+
+(Document simplifie a des fins de test - corpus pedagogique. Ne constitue pas un conseil juridique.)
+
+
+Article 1 - Arrhes et acomptes : deux regimes differents
+
+Lorsqu'un consommateur verse une somme d'argent a la commande, il faut distinguer selon qu'il s'agit d'arrhes ou d'un acompte. Les arrhes laissent a chacun la possibilite de renoncer au contrat : le consommateur qui se desiste perd les arrhes versees, et le professionnel qui renonce doit restituer le double de ce qu'il a recu. L'acompte, au contraire, constitue un premier paiement sur un contrat definitif : aucune des deux parties ne peut se desister, et celle qui n'execute pas ses obligations peut etre condamnee a payer le solde ou a verser des dommages et interets.
+
+Sauf stipulation contraire du contrat, les sommes versees d'avance par un consommateur a un professionnel sont des arrhes. Si le bon de commande ne precise rien, le consommateur peut donc renoncer a son achat en abandonnant la somme versee.
+
+
+Article 2 - Interets sur les sommes versees d'avance
+
+Toute somme versee d'avance sur le prix produit des interets au taux legal a l'expiration d'un delai de trois mois a compter du versement, et jusqu'a la livraison du bien ou l'execution de la prestation. Ces interets sont deduits du solde a payer au moment de la livraison, ou ajoutes aux sommes restituees si le contrat est resilie.
+
+
+Article 3 - Moyens de paiement acceptes
+
+Le commercant ne peut pas refuser un paiement en especes, mais le client doit faire l'appoint. Le paiement en especes d'un achat aupres d'un professionnel est plafonne a 1 000 euros lorsque le client a son domicile fiscal en France. Le commercant est libre, en revanche, de refuser les cheques ou les cartes bancaires, ou de ne les accepter qu'a partir d'un montant minimal, a condition d'en informer clairement la clientele par un affichage a l'entree du magasin ou en caisse.
+
+Le professionnel ne peut pas facturer de frais supplementaires au consommateur au motif qu'il utilise un moyen de paiement plutot qu'un autre. Il peut en revanche accorder une reduction pour l'usage d'un moyen de paiement determine.
+
+
+Article 4 - Commande en ligne et paiements supplementaires
+
+Lors d'une commande sur internet, le professionnel veille a ce que le consommateur reconnaisse explicitement son obligation de paiement : le bouton de validation porte la mention "commande avec obligation de paiement" ou une formule equivalente. A defaut, le contrat est nul. Avant la validation, un recapitulatif indique le prix total, toutes taxes et frais de livraison compris.
+
+Tout paiement supplementaire venant s'ajouter au prix de l'objet principal du contrat, comme une assurance, une extension de garantie ou une livraison express, exige le consentement expres du consommateur. Ce consentement ne peut pas resulter d'une case cochee par defaut : le consommateur peut demander le remboursement des sommes prelevees de cette maniere.
+
+
+Article 5 - Justificatifs de paiement
+
+Le ticket de caisse n'est plus imprime automatiquement : il est remis au client qui le demande. Pour une prestation de service d'un montant egal ou superieur a 25 euros, le professionnel doit remettre une note detaillee. Il est conseille de conserver ces justificatifs pendant toute la duree des garanties, car ils permettent de prouver la date et le lieu de l'achat.
+
+
+Article 6 - Operations de paiement non autorisees
+
+Le titulaire d'une carte bancaire qui constate sur son compte une operation qu'il n'a pas autorisee doit la signaler sans tarder a sa banque, et au plus tard dans les treize mois suivant la date du debit. La banque rembourse le montant de l'operation immediatement, et au plus tard a la fin du premier jour ouvrable suivant, sauf si elle a de bonnes raisons de soupconner une fraude de son client.
+
+En cas de perte ou de vol de la carte, le titulaire supporte les pertes anterieures a l'opposition dans la limite de 50 euros. Cette franchise ne s'applique pas lorsque l'operation a ete realisee sans utilisation des donnees de securite personnalisees, ou lorsque la carte a ete contrefaite ou ses donnees detournees alors que le titulaire l'avait toujours en sa possession. Apres l'opposition, le titulaire ne supporte plus aucune perte. A l'inverse, il supporte l'integralite des pertes s'il a agi frauduleusement ou s'il a commis une negligence grave, par exemple en communiquant son code confidentiel a un tiers. C'est a la banque de prouver cette negligence.
+
+
+Article 7 - Paiement en plusieurs fois
+
+Un paiement echelonne sur plus de trois mois, ou assorti d'interets ou de frais, constitue en principe un credit a la consommation et obeit aux regles protectrices correspondantes, decrites dans un document distinct.
